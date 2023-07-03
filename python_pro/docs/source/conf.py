@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'mentorama'
-copyright = '2023, roberto'
-author = 'roberto'
-release = '0.1'
+project = 'appTop10'
+copyright = '2023, Roberto Manoel'
+author = 'Roberto Manoel'
+release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

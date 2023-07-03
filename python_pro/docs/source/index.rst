@@ -1,10 +1,10 @@
-.. mentorama documentation master file, created by
-   sphinx-quickstart on Wed May 31 09:55:34 2023.
+.. appTop10 documentation master file, created by
+   sphinx-quickstart on Sun Jul  2 11:21:44 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to mentorama's documentation!
-=====================================
+Welcome to appTop10's documentation!
+====================================
 
 .. toctree::
    :maxdepth: 2
