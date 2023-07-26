@@ -3,8 +3,11 @@ from troposphere import Output, Parameter, Ref, Template
 from troposphere.ec2 import Instance, NetworkInterfaceProperty, SecurityGroup
 from troposphere.ec2 import SecurityGroupRule
 
+# Create a new CloudFormation template
 t = Template()
 
+# Create a security group resource
+# This security group allows SSH and ICMP traffic
 sg = t.add_resource(SecurityGroup(
     "MySecurityGroup",
     GroupDescription="Allow SSH and ICMP traffic",
@@ -24,6 +27,7 @@ sg = t.add_resource(SecurityGroup(
     ],
 ))
 
+# Create an EC2 instance resource
 instance = t.add_resource(Instance(
     "MyInstance",
     ImageId="ami-0c55b159cbfafe1f0",
@@ -40,4 +44,5 @@ instance = t.add_resource(Instance(
     ],
 ))
 
+# Print the CloudFormation template in YAML format
 print(t.to_yaml())

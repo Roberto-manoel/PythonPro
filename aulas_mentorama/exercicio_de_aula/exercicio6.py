@@ -8,6 +8,7 @@ def scrape_concurrent(url):
     except:
         return None
 
+# Lista de URLs a serem raspadas
 urls = [
     "https://www.example.com/page1",
     "https://www.example.com/page2",
@@ -22,7 +23,10 @@ urls = [
 ]
 
 if __name__ == '__main__':
+    # Utiliza o ThreadPoolExecutor para realizar scraping concorrente
     with concurrent.futures.ThreadPoolExecutor() as executor:
+        # Mapeia a função scrape_concurrent para cada URL na lista
         results_concurrent = list(executor.map(scrape_concurrent, urls))
+
+    # Imprime os resultados obtidos
     print(results_concurrent)
-    
